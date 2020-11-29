@@ -16,11 +16,11 @@ export const RAZOR_PAY_KEY_LIVE = 'rzp_live_UgkvjAhkMe7mDc';
 
 /************************** Testing Config ***********************/
 
-export const BASE_URL = 'http://13.127.22.216:8088/';
+//export const BASE_URL = 'http://13.127.22.216:8088/';
 
 /************************** Production Config ***********************/
 
-//export const BASE_URL = 'http://15.206.181.222:8086/';
+export const BASE_URL = 'http://65.0.110.46:8086/';
 
 /********************************************************************/
 
@@ -33,11 +33,11 @@ export const COLORS = {
 
 
 export const FEATURES = {
-    Asset_Creation:'BN1',
-    Complaint_Raise:'BN2',
-    Task_Creation:'BN3',
-    Assatmate:'BN4',
-    Documate:'BN5',
-    View_Task:'BN6',
-    View_Complaint:'BN7',
+    Asset_Creation: 'BN1',
+    Complaint_Raise: 'BN2',
+    Task_Creation: 'BN3',
+    Assatmate: 'BN4',
+    Documate: 'BN5',
+    View_Task: 'BN6',
+    View_Complaint: 'BN7',
 }

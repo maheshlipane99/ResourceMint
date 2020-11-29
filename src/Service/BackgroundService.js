@@ -1161,9 +1161,11 @@ export default class BackgroundService {
                 data.forEach(element => {
                   FeaturesModel.addItem(element).then((result) => {
                     console.log(JSON.stringify(result));
+                    SystemLogModel.addItem(JSON.stringify(element)+ ' Feature Added')
                   })
                 });
               })
+              
               SystemLogModel.addItem(data.length + ' Features Downloaded')
               return true
             } else {

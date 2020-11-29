@@ -71,7 +71,6 @@ class Home extends Component {
         });
 
         this.checkLastData();
-
     }
 
     getFeatures = () => {
@@ -84,6 +83,7 @@ class Home extends Component {
     }
 
     initFeature = () => {
+    
         FeaturesModel.getAllItems().then(result => {
             console.log(JSON.stringify(result));
             let featureCodes = []
@@ -296,6 +296,7 @@ class Home extends Component {
         for (let index = 0; index < homeData.length; index++) {
             let featureCode = ''
             const element = homeData[index];
+            
             if (element.id == 1) {
                 element.count = assetMate;
                 featureCode = FEATURES.Assatmate
@@ -511,17 +512,17 @@ class Home extends Component {
         }
         var emptyView = <View></View>;
         if (this.state.message && !this.state.animating && this.state.featureCodes.length == 0) {
-            emptyView = (
-                <View style={{ height: '100%', alignContent: 'center', justifyContent: 'center', padding: 20 }}>
-                    <Done
-                        title='Opps...Sorry'
-                        btnText='Try again'
-                        message={this.state.message}
-                        iconSize={80}
-                        icon='frown'
-                        onPress={() => { this.onClickHandler('checkFeature') }} />
-                </View>
-            )
+            // emptyView = (
+            //     <View style={{ height: '100%', alignContent: 'center', justifyContent: 'center', padding: 20 }}>
+            //         <Done
+            //             title='Opps...Sorry'
+            //             btnText='Try again'
+            //             message={this.state.message}
+            //             iconSize={80}
+            //             icon='frown'
+            //             onPress={() => { this.onClickHandler('checkFeature') }} />
+            //     </View>
+            // )
         }
 
         var masterView = <View></View>;

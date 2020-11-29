@@ -1,11 +1,11 @@
 const HomeData = [
     {
         id: '1',
-        title: 'ResourceMint',
+        title: 'Assetmate',
         count: 0,
         icon: require('../Assets/Home/assetMate.png'),
         route: "ScanScreen",
-        featureCode: '#A958BF',
+        featureCode: 'BN4',
     },
     {
         id: '2',
@@ -13,7 +13,7 @@ const HomeData = [
         count: 0,
         icon: require('../Assets/Home/taskMate.png'),
         route: "AllDocument",
-        featureCode: '#A958BF',
+        featureCode: 'BN5',
     },
     {
         id: '3',
@@ -21,7 +21,7 @@ const HomeData = [
         count: 0,
         icon: require('../Assets/Home/taskMate.png'),
         route: "TaskHome",
-        featureCode: '#A958BF',
+        featureCode: 'BN6',
     },
     {
         id: '4',
@@ -29,7 +29,7 @@ const HomeData = [
         count: 0,
         icon: require('../Assets/Home/complaint.png'),
         route: "ComplaintHome",
-        featureCode: '#A958BF',
+        featureCode: 'BN7',
     },
 ]
 
